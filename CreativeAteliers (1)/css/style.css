@@ -1,0 +1,242 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+* {
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+/* tête de page */
+
+header.header{
+    display: flex;
+    align-items: center;
+    background-color: rosybrown;
+
+}
+
+
+
+header.header img{
+    width: 250px;
+}
+section.top-page {
+    background: url("../images CA/8ec5b3dc313c954ca2ec168bb919deaa.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+   
+}
+
+/* page de bienvenue (landing page */
+
+.landing-page{
+    padding: 70px 50px;
+}
+.big-title{
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril FatFace'; 
+    font-weight: 100;
+}
+.scroll-down {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    bottom: 80px;
+
+}
+
+/* menu de navigation */
+
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 800px;
+    margin-left: 30px;
+}
+
+nav.nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* services*/
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.services-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon{
+    font-size: 50px;
+    color: rosybrown;
+}
+.service-details{
+    font-weight: 500;
+    width: 200px;
+    text-align: center;
+}
+
+/* best items */
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Abril Fatface';
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: rosybrown;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.best-items{
+    margin: 50px;
+}
+
+
+.best-sellers {
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 250px;
+    height: 500px;
+    flex: 1;
+}
+
+.no-grid{
+    min-width: 250px;
+    height: 500px;
+    flex: 1; 
+}
+
+.article1{
+    background-image: url("../images CA/art 5.jpg");
+}
+
+.article2{
+    background-image: url("../images CA/art 6.jpg");
+}
+
+.article3{
+    background-image: url("../images CA/art 3.jpg");
+}
+
+.article4{
+    background-image: url("../images CA/art 2.jpg");
+}
+
+.details-article{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+.article-name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.article-price{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 5px;
+}
+
+/*nos articles*/
+
+.all-articles{
+    margin: 100px;
+}
+
+.article-grid{
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+.article-grid1{
+    background-image: url("../images CA/art13.jpg");
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.article-grid2{
+    background-image: url("../images CA/art8.jpg");
+    grid-column: 3/5;
+   
+}
+
+
+/*.article-grid3{
+    background-image: url("../images CA/art10.jpg");
+    grid-column: 2/5;
+}*/
+
+.article-grid4{
+    background-image: url("../images CA/art9.jpg");
+    grid-column: 1;
+    grid-row: 2/2;
+}
+
+.article-grid5{
+    background-image: url("../images CA/art\ 5.jpg");
+    grid-column: 2/4;
+    grid-row: 2/2;
+}
+
+
+.article-grid6{
+    background-image: url("../images CA/art\ 4.jpg");
+    grid-column: 4;
+    grid-row: 2/2;
+}
+
+/*pied de page*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: black;
+}
+
+
